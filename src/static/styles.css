@@ -75,20 +75,38 @@ section h3 {
 }
 
 .activity-card ul {
-  margin: 8px 0;
-  padding-left: 25px;
-  list-style-type: disc;
+  margin: 12px 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .activity-card li {
-  padding: 4px 0;
+  position: relative;
+  padding: 6px 0 6px 24px;
   color: #555;
   font-size: 0.95em;
+}
+
+.activity-card li:before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  color: #1a237e;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.activity-card li:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .activity-card em {
   color: #666;
   font-style: italic;
+  display: block;
+  padding: 6px 0;
 }
 
 .form-group {
